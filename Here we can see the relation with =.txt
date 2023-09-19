@@ -1,0 +1,35 @@
+Here we can see the relation with ===>>> LEFT LOWER DIGONAL
+Row: 0   1   2   3   4     5     6    7
+col:
+ 0  | 0 | 1 | 2 | 3  | 4  | 5  | 6  | 7  |
+ 1  | 1 | 2 | 3 | 4  | 5  | 6  | 7  | 8  |
+ 2  | 2 | 3 | 4 | 5  | 6  | 7  | 8  | 9  |
+ 3  | 3 | 4 | 5 | 6  | 7  | 8  | 9  | 10 |
+ 4  | 4 | 5 | 6 | 7  | 8  | 9  | 10 | 11 |
+ 5  | 5 | 6 | 7 | 8  | 9  | 10 | 11 | 12 |
+ 6  | 6 | 7 | 8 | 9  | 10 | 11 | 12 | 13 |
+ 7  | 7 | 8 | 9 | 10 | 11 | 12 | 13 | 14 |
+
+We can store in a hash size = 2*n - 1;
+vector<int> v(15, 0)
+
+We can say digonaly any element present or not.
+
+2: We can see digonal left upper diagonal
+
+Row: 0   1   2   3   4     5     6    7
+col:
+ 0  | 7 | 8 | 9 | 10 | 11 | 12 | 13 | 14 |
+ 1  | 6 | 7 | 8 | 9  | 10 | 11 | 12 | 13 |
+ 2  | 5 | 6 | 7 | 8  | 9  | 10 | 11 | 12 |
+ 3  | 4 | 5 | 6 | 7  | 8  | 9  | 10 | 11 |
+ 4  | 3 | 4 | 5 | 6  | 7  | 8  | 9  | 10 |
+ 5  | 2 | 3 | 4 | 5  | 6  | 7  | 8  | 9  |
+ 6  | 1 | 2 | 3 | 4  | 5  | 6  | 7  | 8  |
+ 7  | 0 | 1 | 2 | 3  | 4  | 5  | 6  | 7  |
+
+Size = 2*n - 1;
+Relation = [(n-1) + (col-row)]
+
+Also use this relation for set in hash 
+
